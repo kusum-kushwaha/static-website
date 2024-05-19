@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>STATIC BOOK</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  width: 100%;
+  height:fit-content;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body style="background-color: #feecc3 ;"">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top" style="background-color: rgb(241, 220, 160);">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME PAGE</a>
+    <a href="#login" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> LOGIN</a>
+    <a href="#user" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> USER PROFILE</a>
+    <a href="#catalog" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-book"></i> BOOK CATALOG</a>
+    <a href="#cart" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-shopping-cart"></i> SHOPPING CART</a>
+    <a href="#payment" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-credit-card"></i> PAYMENT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#login" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME</a>
+    <a href="#user" class="w3-bar-item w3-button" onclick="toggleFunction()">USER PROFILE</a>
+    <a href="#catalog" class="w3-bar-item w3-button" onclick="toggleFunction()">BOOK CATALOG</a>
+    <a href="#cart" class="w3-bar-item w3-button" onclick="toggleFunction()">SHOPPING CART</a>
+    <a href="#payment" class="w3-bar-item w3-button" onclick="toggleFunction()">PAYMENT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home" style="background-image:url(book.webp);">
+
+
+  </div>
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">BOOK <span class="w3-hide-small">STORE</span>
+  </div>
+</div>
+<div class="books" style="display:flex;">
+  <img src="1.jpg"width="630" height="600"><img src="2.jpg"width="630" height="600"></div>
+  <div class="books1" style="display: flex;"><img src="3.jpg"width="630" height="600"><img src="4.jpg"width="630" height="600"></div>
+<div class="w3-content w3-container w3-padding-64" id="home" >
+    <h3 class="w3-center">HOME</h3>
+
+    <h1 style="background-color: rgb(216, 201, 178);">Welcome to the Online Book Store</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="registration.html">Register/Login</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="catalog.html">Books Catalog</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+            <li><a href="payment.html">Payment</a></li>
+            <li><a href="confirmation.html">Order Confirmation</a></li>
+        </ul>
+    </nav>
+    <p>Discover a wide range of books from various genres and authors. Happy shopping!</p>
+    </div>
+    
+    <div class="w3-content w3-container w3-padding-64" id="login">
+      <h3 class="w3-center" style="background-color: rgb(216, 201, 178);">RESISTER OR LOGIN</h3>
+      <h2 >Register</h2>
+      <form>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required><br><br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required><br><br>
+          <input type="submit" value="Register">
+      </form>
+      <h2>Login</h2>
+      <form>
+          <label for="login_username">Username:</label>
+          <input type="text" id="login_username" name="login_username" required><br><br>
+          <label for="login_password">Password:</label>
+          <input type="password" id="login_password" name="login_password" required><br><br>
+          <input type="submit" value="Login">
+      </form>
+
+   <div class="w3-content w3-container w3-padding-64" id="catalog">
+      <h3 class="w3-center" style="background-color: rgb(216, 201, 178);">BOOK CATALOG</h3>
+      <div class="img" style="width:100%;">
+        <img src="6.jpg"width="915" height="600">
+    
+      </div>
+      <h1>Books Catalog</h1>
+      <p>Explore our collection of books:</p>
+      <ul>
+          <li><a href="book1.html">Book Title 1</a></li>
+          <li><a href="book2.html">Book Title 2</a></li>
+          <li><a href="book3.html">Book Title 3</a></li>
+      </ul>
+
+      <div class="w3-content w3-container w3-padding-64" id="cart">
+        <h3 class="w3-center" style="background-color: rgb(216, 201, 178);">SHOPPING CART</h3>
+      
+ 
+
+        <h4>Your shopping cart contains:</h4>
+        <ul>
+            <li>Book Title 1 - $10.00</li>
+            <li>Book Title 2 - $15.00</li>
+        </ul>
+        <p>Total: $25.00</p>
+        <a href="payment.html">Proceed to Payment</a>
+
+        <div class="w3-content w3-container w3-padding-64" id="payment">
+          <h3 class="w3-center" style="background-color: rgb(216, 201, 178);">PAYMENT</h3>
+          <h1>Payment by Credit Card</h1>
+   
+          <form action="/submit_payment" method="post">
+              <label for="card_number">Credit Card Number:</label>
+              <input type="text" id="card_number" name="card_number" required><br><br>
+              <label for="expiry_date">Expiry Date:</label>
+              <input type="text" id="expiry_date" name="expiry_date" required><br><br>
+              <label for="cvv">CVV:</label>
+              <input type="text" id="cvv" name="cvv" required><br><br>
+              <input type="submit" value="Submit Payment">
+          </form>
+
+
+</body>
+</html>
